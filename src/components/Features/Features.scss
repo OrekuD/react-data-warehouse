@@ -1,0 +1,40 @@
+@import "../../constants/colors.scss";
+
+.features {
+  margin: 50px auto;
+
+  .title {
+    margin: 50px auto;
+    text-align: center;
+    font-size: 36px;
+    color: $deepPurple;
+  }
+
+  .subtitle {
+    margin: 50px auto;
+    width: 50%;
+    font-size: 18px;
+    color: $deepGrey;
+    text-align: center;
+  }
+
+  .items {
+    display: flex;
+    margin: 50px auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .wrapper {
+      width: 45%;
+      // background-color: red;
+      margin-bottom: 30px;
+      display: grid;
+      place-items: center;
+
+      .feature {
+        width: 75%;
+        height: 200px;
+      }
+    }
+  }
+}
