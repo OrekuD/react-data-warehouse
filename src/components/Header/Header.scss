@@ -22,17 +22,4 @@ header {
       }
     }
   }
-
-  .btn-header {
-    width: 180px;
-    height: 50px;
-    border-radius: 25px;
-    background-color: white;
-    box-shadow: 0px 5px 10px rgba(75, 93, 104, 0.1);
-    text-transform: capitalize;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    color: $deepPurple;
-  }
 }

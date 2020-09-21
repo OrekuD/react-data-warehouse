@@ -1,0 +1,33 @@
+@import "../../constants/colors.scss";
+
+.about {
+  margin: 150px auto;
+  height: 450px;
+  background-color: rgba(240, 99, 84, 0.15);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  img {
+    width: 35%;
+    margin: auto 0;
+  }
+
+  .content {
+    width: 50%;
+
+    .title {
+      width: 70%;
+      font-size: 36px;
+      color: $deepPurple;
+    }
+
+    .subtitle {
+      width: 80%;
+      font-size: 18px;
+      color: $deepGrey;
+      margin-top: 30px;
+    }
+  }
+}
