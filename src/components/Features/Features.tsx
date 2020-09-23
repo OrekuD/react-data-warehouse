@@ -1,5 +1,7 @@
 import React from "react";
+import { deepPurple } from "../../constants/colors";
 import { features } from "../../data/features";
+import { ArrowRight } from "../../svgs/Svgs";
 import "./Features.scss";
 
 const Features = () => (
@@ -12,7 +14,23 @@ const Features = () => (
     <div className="items">
       {features.map(({ description, image, label, color }, index) => (
         <div className="wrapper" key={index}>
-          <div className="feature" style={{ backgroundColor: color }}></div>
+          <div className="feature" style={{ backgroundColor: color }}>
+            <img
+              src={image}
+              alt={label}
+              style={{ marginTop: index === 0 ? 20 : 0 }}
+            />
+            <div className="content">
+              <div>
+                <p className="label">{label}</p>
+                <p className="description">{description}</p>
+              </div>
+              <button className="learn-more">
+                Learn more
+                <ArrowRight size={18} color={deepPurple} />
+              </button>
+            </div>
+          </div>
         </div>
       ))}
     </div>
