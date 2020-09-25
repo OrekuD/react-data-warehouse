@@ -1,5 +1,4 @@
 import React from "react";
-import { deepPurple } from "../../constants/colors";
 import { features } from "../../data/features";
 import { ArrowRight } from "../../svgs/Svgs";
 import "./Features.scss";
@@ -27,7 +26,7 @@ const Features = () => (
               </div>
               <button className="learn-more">
                 Learn more
-                <ArrowRight size={18} color={deepPurple} />
+                <ArrowRight size={18} color="#9C69E2" />
               </button>
             </div>
           </div>

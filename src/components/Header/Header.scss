@@ -2,10 +2,10 @@
 
 header {
   height: 130px;
-  // background-color: red;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 20px;
 
   .left {
     display: flex;
@@ -19,6 +19,22 @@ header {
       &:first-of-type {
         color: $deepPurple;
         margin-left: 100px;
+      }
+    }
+
+    @media (max-width: 780px) {
+      .link {
+        margin-right: 20px;
+
+        &:first-of-type {
+          margin-left: 40px;
+        }
+      }
+    }
+
+    @media (max-width: 570px) {
+      .link {
+        display: none;
       }
     }
   }

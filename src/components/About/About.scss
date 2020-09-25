@@ -2,25 +2,49 @@
 
 .about {
   margin: 150px auto;
-  height: 450px;
+  min-height: 450px;
   background-color: rgba(240, 99, 84, 0.15);
   border-radius: 50px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 
+  @media (max-width: 720px) {
+    min-height: 400px;
+  }
+
+  @media (max-width: 540px) {
+    justify-content: flex-start;
+    min-height: 340px;
+    padding: 30px;
+    padding-right: 0px;
+    margin: 50px auto;
+  }
+
   img {
     width: 35%;
     margin: auto 0;
+
+    @media (max-width: 540px) {
+      display: none;
+    }
   }
 
   .content {
     width: 50%;
 
+    @media (max-width: 540px) {
+      width: 80%;
+    }
+
     .title {
       width: 70%;
       font-size: 36px;
       color: $deepPurple;
+
+      @media (max-width: 720px) {
+        width: 100%;
+      }
     }
 
     .subtitle {
@@ -28,6 +52,10 @@
       font-size: 18px;
       color: $deepGrey;
       margin-top: 30px;
+
+      @media (max-width: 720px) {
+        width: 100%;
+      }
     }
   }
 }
