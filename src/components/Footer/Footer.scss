@@ -1,0 +1,120 @@
+@import "../../constants/colors.scss";
+
+footer {
+  border-top: 2px solid #ebe1f9;
+  margin-top: 30px;
+  padding: 50px 100px;
+
+  .footer-label {
+    font-size: 16px;
+    color: $deepPurple;
+    margin-bottom: 15px;
+    max-width: 200px;
+    line-height: 22px;
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #e8e8ed;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+  }
+
+  @media (max-width: 1024px) {
+    padding: 50px 80px;
+  }
+
+  @media (max-width: 920px) {
+    padding: 40px 60px;
+  }
+
+  @media (max-width: 720px) {
+    padding: 40px 40px;
+  }
+
+  @media (max-width: 620px) {
+    padding: 30px 20px;
+  }
+
+  .footer-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .footer-title {
+      font-size: 36px;
+      color: $deepPurple;
+    }
+
+    .footer-subtitle {
+      font-size: 18px;
+      color: $deepGrey;
+      margin-top: 10px;
+
+      @media (max-width: 780px) {
+        margin-bottom: 30px;
+      }
+    }
+
+    .footer-label {
+      max-width: 100%;
+    }
+
+    .buttons {
+      display: flex;
+      align-items: center;
+
+      button {
+        &:first-of-type {
+          margin-right: 30px;
+
+          @media (max-width: 380px) {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-middle {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 40px 0;
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .section {
+      margin-right: 120px;
+      margin-bottom: 30px;
+      // background-color: red;
+
+      .logo {
+        display: flex;
+        margin-bottom: 20px;
+
+        .logo-text {
+          font-size: 20px;
+          color: $deepPurple;
+          margin-left: 15px;
+        }
+      }
+
+      .icons {
+        display: flex;
+        margin-top: 10px;
+
+        .icon {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}
