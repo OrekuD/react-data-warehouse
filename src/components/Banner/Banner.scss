@@ -2,7 +2,11 @@
 
 .banner {
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
+
+  @media (max-width: 1280px) {
+    margin-bottom: 100px;
+  }
 
   @media (max-width: 500px) {
     margin-bottom: 40px;
@@ -27,6 +31,7 @@
       font-size: 80px;
       color: $deepPurple;
       margin-top: 30px;
+      font-family: "Roboto Condensed", sans-serif;
 
       @media (max-width: 800px) {
         font-size: 60px;
@@ -41,11 +46,11 @@
       width: 70%;
       font-size: 18px;
       color: $deepGrey;
-      margin: 50px 0;
+      margin: 30px 0;
+      line-height: 24px;
 
       @media (max-width: 800px) {
         width: 100%;
-        margin: 30px 0;
       }
     }
   }

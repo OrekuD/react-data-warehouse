@@ -4,26 +4,23 @@
   margin: 50px auto;
 
   .title {
-    margin: 50px auto;
+    margin: 30px auto;
     text-align: center;
     font-size: 36px;
     color: $deepPurple;
-
-    @media (max-width: 640px) {
-      margin: 30px auto;
-    }
+    font-family: "Roboto Condensed", sans-serif;
   }
 
   .subtitle {
-    margin: 50px auto;
+    margin: 20px auto;
     width: 50%;
     font-size: 18px;
+    line-height: 24px;
     color: $deepGrey;
     text-align: center;
 
     @media (max-width: 640px) {
       width: 90%;
-      margin: 20px auto;
     }
   }
 
@@ -112,11 +109,13 @@
             color: $deepPurple;
             margin-bottom: 20px;
             text-transform: capitalize;
+            font-family: "Roboto Condensed", sans-serif;
           }
 
           .description {
             color: $deepGrey;
             font-size: 16px;
+            line-height: 22px;
           }
 
           .learn-more {

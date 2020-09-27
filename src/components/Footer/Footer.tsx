@@ -25,7 +25,7 @@ const Footer = () => (
       <div>
         <p className="footer-title">Try for free!</p>
         <p className="footer-subtitle">
-          Get limited 1 week free. Try our features!
+          Get limited 1 week for free. Try our features!
         </p>
       </div>
       <div className="buttons">

@@ -2,6 +2,7 @@
 
 .about {
   margin: 150px auto;
+  margin-bottom: 100px;
   min-height: 450px;
   background-color: rgba(240, 99, 84, 0.15);
   border-radius: 50px;
@@ -41,9 +42,11 @@
       width: 70%;
       font-size: 36px;
       color: $deepPurple;
+      font-family: "Roboto Condensed", sans-serif;
 
       @media (max-width: 720px) {
         width: 100%;
+        font-size: 34px;
       }
     }
 
@@ -52,6 +55,7 @@
       font-size: 18px;
       color: $deepGrey;
       margin-top: 30px;
+      line-height: 24px;
 
       @media (max-width: 720px) {
         width: 100%;

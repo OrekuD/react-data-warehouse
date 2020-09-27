@@ -48,6 +48,7 @@ footer {
     .footer-title {
       font-size: 36px;
       color: $deepPurple;
+      font-family: "Roboto Condensed", sans-serif;
     }
 
     .footer-subtitle {
@@ -94,7 +95,6 @@ footer {
     .section {
       margin-right: 120px;
       margin-bottom: 30px;
-      // background-color: red;
 
       .logo {
         display: flex;
@@ -104,12 +104,12 @@ footer {
           font-size: 20px;
           color: $deepPurple;
           margin-left: 15px;
+          font-weight: 500;
         }
       }
 
       .icons {
         display: flex;
-        margin-top: 10px;
 
         .icon {
           margin-right: 15px;
